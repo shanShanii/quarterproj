@@ -1,0 +1,499 @@
+*{
+	margin: 0px;
+	padding:0px;
+	font-family: Baskerville;
+	font-size: 115%;
+	background-color: #A5B8BD;
+}
+.bg-image{
+	min-height: 100vh;
+	width: 203vh;
+	background-image: url(https://andersonair.ca/wp-content/uploads/2014/02/clouds-blue-sky-blurred-background-backdrop.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 2;
+	position: relative;
+}
+#earth{
+	width: 90px;
+}
+.nav-links{
+	flex: 1;
+	position: fixed;
+	margin-top: 50px;
+	left: 45%;
+}
+.nav-links ul li{
+	padding: 4px 12px;
+	position: absolute;
+}
+.nav-links ul li a{
+	color: white;
+	font-size: 15px;
+}
+.nav-links ul li::after{
+	content: ' ';
+	height: 2px;
+	background: #D3FFB9;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+} 
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 1100px;
+	color: white;
+	position: absolute;
+	top: 210px;
+	left: 60px;
+	text-align: center;
+	padding:1px;
+}
+.text-box h1{
+	font-size: 30px;
+	margin-top: 30px;
+}
+.text-box p{
+	margin-top: 40px;
+	font-size: 25px;
+	color: white;
+	margin-bottom: 20px;
+}
+.causes {
+	background-color: #A7826C;
+}
+.smoke{
+	float: left;
+	padding: 3%;
+	width: 245px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 150px;
+}
+.smoke-txt{
+	text-align: center;
+    padding: 10px;
+	font-size: 21px;
+}
+#fact {
+	width: 245px;
+}
+#smokey{
+	position: absolute;
+	z-index:1;
+	top: 250px;
+	left: 200px;
+	border-radius: 50%;
+	height:100px;
+	width: 100px;
+}
+
+.deforestation{
+	position:absolute;
+	top: 150px;
+	margin-left: 450px;
+	padding: 3%;
+	width: 245px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.deforestation-txt{
+	text-align: center;
+    padding: 10px;
+	font-size: 20.5px;
+}
+#forest {
+	 width:245px;
+}
+#trees{
+	position: absolute;
+	z-index:1;
+	top: 250px;
+	left: 660px;
+	border-radius: 50%;
+	height:100px; 
+	width:100px;
+}
+.overpopulation{
+	position: absolute;
+	top: 150px;
+	margin-left: 900px;
+	padding: 3%;
+	width: 245px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overpopulation-txt{
+	text-align: center;
+    padding: 10px;
+	font-size: 20.85px;
+}
+#over {
+	width: 245px;
+}
+#pigs{
+	position: absolute;
+	z-index: 1;
+	top: 250px;
+	left: 1110px;
+	border-radius: 50%;
+	height: 100px;
+	width:100px;
+}
+.cpr {
+	padding: 10px;
+	font-size: 20px;
+	color: black;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	width: 1100px;
+	height: 90px;
+	z-index: 2;
+	position: fixed;
+}
+nav img{
+	width: 100px;
+}
+nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 4px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+.nav-links ul li::after{
+	content: ' ';
+	width: 0%;
+	height: 2px;
+	background: #D3FFB9;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+} 
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.cookie {
+	position: relative;
+	width: 605px;
+	padding: 5px;
+	margin-top: 20px;
+}
+.ika {
+	display: block;
+	width: 320px;
+	height: 270px;
+}
+.make {
+	position: absolute;
+	bottom: 100%;
+	background-color: white;
+	overflow: hidden;
+	width: 52.5%;
+	height: 0;
+	transition: .5s ease;
+}
+.cookie:hover .make {
+	bottom: 0;
+	height: 100%;
+}
+
+.green {
+	white-space: nowrap; 
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-mos-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.con{
+	position: absolute;
+	left: 610px;
+	width: 605px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.serve {
+	display: block;
+	width: 320px;
+	height: 270px;
+}
+.ing {
+	position: absolute;
+	bottom: 100%;
+	left: 0px;
+	right: 50px;
+	background-color: white;
+	overflow: hidden;
+	width: 53%;
+	height: 0;
+	transition: .5s ease;
+}
+.con:hover .ing {
+	bottom: 0;
+	height: 100%;
+}
+.energy {
+	white-space: nowrap; 
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-mos-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.re{
+	position: absolute;
+	left: 610px;
+	top: 230px;
+	width: 605px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.cy {
+	display: block;
+	width: 320px;
+	height: 270px;
+}
+.cle {
+	position: absolute;
+	bottom: 100%;
+	background-color: white;
+	overflow: hidden;
+	width: 53%;
+	height: 0;
+	transition: .5s ease;
+}
+.re:hover .cle {
+	bottom: 0;
+	height: 100%;
+}
+.plastic {
+	white-space: nowrap; 
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-mos-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.ad{
+	position: relative;
+	width: 605px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.vo {
+	display: block;
+	width: 320px;
+	height: 270px;
+}
+.cate {
+	position: absolute;
+	bottom: 100%;
+	left: 0px;
+	right: 50px;
+	background-color: white;
+	overflow: hidden;
+	width: 53%;
+	height: 0;
+	transition: .5s ease;
+}
+.ad:hover .cate {
+	bottom: 0;
+	height: 100%;
+}
+.let {
+	white-space: nowrap; 
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-mos-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+}
+h3 {
+	padding: 10px;
+}
+h4 {
+	padding: 15px;
+	border: 5px solid #64A4BB;
+	border-radius: 20px;
+	width: 200px;
+	position: fixed;
+	float: right;
+	height: 65px;
+	margin: 100px;
+	text-align: center;
+	margin-left: 700px;
+	margin-top: 200px;
+	color: white;
+}
+#clim {
+	width: 500px;
+	height: 300px;
+	margin-top: 250px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+video {
+	width: 500px;
+	height: 300px;
+	margin-top: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+footer {
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	background-color: #a7bb9b;
+	clear: both;
+	width: 200vh;
+}
+hr {
+	border: 2px solid white;
+	clear: both;
+	width: 202vh;
+}
+#he {
+	border: 2px solid white;
+	clear: both;
+	margin-top: 750px;
+}
+h2 {
+	margin-top: 150px;
+	padding: 10px;
+	font-size: 25px;
+}
+#crim {
+	position:absolute;
+	top: 170px;
+	left: 230px;
+	font-size: 20px;
+}
+.fbsprite{
+	background: url(../images/icon.png) no-repeat -182px -91px;
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	top: 350px;
+	left: 280px;
+	border-radius: 50%;
+	transform: scale(2);
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	-mos-transform: scale(2);
+	-o-transform: scale(2);
+}
+.fbsprite:hover {
+	background: url(../images/icon.png) no-repeat -182px -16px;
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	top: 350px;
+	left: 280px;
+	border-radius: 50%;
+	transform: scale(2);
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	-mos-transform: scale(2);
+	-o-transform: scale(2);
+}
+.twtsprite{
+	background: url(../images/icon.png) no-repeat -296px -91px;
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	top: 550px;
+	left: 280px;
+	border-radius: 50%;
+	transform: scale(2);
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	-mos-transform: scale(2);
+	-o-transform: scale(2);
+}
+.twtsprite:hover {
+	background: url(../images/icon.png) no-repeat -296px -16px;
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	top: 550px;
+	left: 280px;
+	border-radius: 50%;
+	transform: scale(2);
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	-mos-transform: scale(2);
+	-o-transform: scale(2);
+}
+#lala {
+	position: absolute;
+	top: 200px;
+	padding: 20px;
+}
+#twt {
+	position:absolute;
+	top: 550px;
+	left: 400px;
+	font-size: 30px;
+}
+#fb {
+	position:absolute;
+	top: 340px;
+	left: 400px;
+	font-size: 30px;
+}
+#clima {
+	border: 2px solid white;
+	clear: both;
+	margin-top: 750px;
+}
